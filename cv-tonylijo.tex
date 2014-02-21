@@ -1,0 +1,155 @@
+\documentclass{resume}
+\usepackage{url}
+\renewcommand{\categoryfont}{\sc}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter 
+% 		will be reset to account for marginparsep]
+% 
+\setlength{\oddsidemargin}{1in}
+\setlength{\marginparwidth}{1in}
+% 
+% calculate other dimensions [textwidth and evensidemargin] 
+% in function of oddsidemargin and marginparwidth: 
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+ \setlength{\evensidemargin}{\oddsidemargin}
+ \setlength{\textwidth}{\paperwidth}
+ \addtolength{\textwidth}{-2in}
+ \addtolength{\textwidth}{-2\oddsidemargin}
+ \addtolength{\textwidth}{\marginparwidth}
+ \addtolength{\textwidth}{\marginparsep}
+%
+%
+\setlength{\topmargin}{-0.5in}
+%
+%
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+
+\author{Tony Lijo Jose}
+% ------ Address --------------------------------------------------------
+
+\address{Development Engineer\\
+  K7 Computing Private Limited\\
+  Chennai,TamilNadu\\
+  {\em Ph:} (+91)-94-4449-8808}{
+  {\em email:} \mbox{\small\tt mail@tonylijo.in}\\
+  {\em github:} \mbox{\small\tt \url{github.com/tonylijo}}\\
+  {\em linkedin:} \mbox{\small\tt \url{linkedin.com/in/tonylijo}}}
+
+\begin{document}
+\maketitle
+
+% ------- Education ---------------------------------------------------
+
+\begin{category}{Education}
+  \citem{B-Tech in Computer Science \& Engineering} \hfill \textbf{2007 -- 2011}
+  \citemnobullet Government Engineering College Palakkad, Kerala.
+  \citem{Higher Secondary Education in Science} \hfill \textbf{2003 -- 2005}
+  \citemnobullet Imigration Jublee Memorial Higher secondery school Kottiyyor, Kerala.
+\end{category}
+
+% --------- Research ----------------------------------------------------
+
+\begin{category}{Research interests}
+  \citemnobullet Linux System programming,AVR/ARM Devolepment,NoSQL databases, application development for Mac OSX and Linux ,development on Raspberry Pi.
+\end{category}
+
+\begin{category}{Technical Skills}
+  \citembullet {\it Operating Systems}: GNU/Linux, Mac OSX.
+  \citembullet {\it Programming Languages}:C(proficient),C++, Objective C, Python(proficient).
+  \citembullet {\it Databases}: MySQL, Riak.
+  \citembullet {\it Tools}:  RabbitMQ, HAProxy, Nginx.
+  \citembullet {\it Version Control}: Git, Subversion, Mercurial, Perforce.
+  \citembullet {\it Cloud Platforms}:  Amazon EC2, Amazon S3.
+  \citembullet {\it Specialities}: C , C++ , Python, Cloud Computing, Scalable design, Big Data, Commandline 
+  tools, NoSQL databases, Virtualization, API design, Web services, Automation \& deployment, 
+  Desktop applications, Shell scripting, Userspace filesystems, Microframeworks, System integration,MicroControllers AVR,ARM.
+\end{category}
+
+% -------- Work experience --------------------------------------------
+
+\begin{category}{Work experience}
+  \citem{K7 Computing, Chennai}
+  \citemnobullet \textbf{{Development Engineer} \hfill Nov 2012 -- present}
+  \citemnobullet Working as part of a team responsible for Devoleping Products Based on Cloud ,Hosing, and Security Domain
+  \begin{itemize}
+
+  \item {{\bfseries K7Tracker} \\
+  K7 Tracker is an invisible software security application that traces the location of missing
+  laptops for recovery. It is a light weight application that will help you track and find your
+  laptop if it ever gets stolen. K7 Tracker provides a method for mitigating this risk. This
+  tracking system send, over the Internet, updates regarding the current location of the device
+  to a remotely administered repository. If the device is lost or stolen, but maintains Internet
+  connectivity and unmodified software, the tracking system can keep tabs on the current
+  whereabouts of the device. This data could prove invaluable when the appropriate authorities attempt to recover the device\\
+  \url{http://k7tracker.com}\\
+  {\it Role:}\\
+  Devolepment of Server, Linux and Mac Agents\\
+  }
+
+  \item {{\bfseries StackIron} \\
+  A platform that lets hosting providers setup a Cloud VPS/IaaS business in mere hours. 
+  Includes support for industry leading, hosting focused billing systems. 
+  StackIron is a highly scalable platform with VPS failover, management server high availability,
+  support for multiple hypervisor technologies, etc.\\
+  \url{http://www.youtube.com/watch?v=yyT9DkHpnA4}\\
+  {\it Role:}\\
+  Devolepment of strackiron Driver for scaleInfra\\
+  } 
+
+  \item{{\bfseries EggPlugg} \\
+  A personal cloud appliance/hardware that lets you access your data no matter where you 
+  are and also let you share and monitor your shares. What's best: It looks like a real egg! 
+  Personal cloud storage that let you keep you data with you and you don't have to spend more to store more. \\
+  \url{http://www.youtube.com/watch?v=JR4O_AgsM2c}\\
+  {\it Role:}\\
+  Configuring and Maintaining the Eggplugg device software and hardware\\
+  }
+
+  \item{{\bfseries K7 Linux Antivirus}\\
+  A Linux Version of K7 antivirus was implemented which was used as a feature in Enterprice AV\\
+  {\it Role:}\\
+  Integrating K7AV engine into linux with devolepment of multiple components required for AV
+  }
+
+  \item {{\bfseries Unified Thread Control}\\
+  A Product which could do intrution detection and virus analysis \\
+  {\it Role:}\\
+  Research and Devolepment\\
+  }
+
+  \end{itemize}
+  \citem{Inxs Technologies, Chennai} 
+  \citemnobullet {\textbf{Software Engineer} \hfill Jan 2012 -- Nov 2012}
+  \citemnobullet Actively involved in the design and development of a High performance Trading platforms
+\end{category}
+
+% -------- Awards & Honours ---------------------------------------
+
+\begin{category}{Awards \&\\ Honours}
+  \citem{``Best Project''}, {\em Computer Science, Government Engineering College Sreekrishnapuram}. \hfill \textbf{2012}
+  \citem{``Founder of Foss Cell''}, {\em I was the founder of Foss Cell Gec Sreekrishnapuram}.
+  \citem{``Year Representative''}, {\em Was Elected as Year representative in College union election.}
+\end{category}
+
+
+% -------- Reference --------------------------------------------
+
+\begin{category}{Reference}
+  \citemnobullet \\
+  \begin{tabular}{ll}Shuveb Hussain&Towfeeque Aalam\\
+    Head, Cloud Computing&Development Manager, Cloud Computing\\
+    K7 Computing Private Limited&K7 Computing Private Limited\\
+    Chennai - 600041&Chennai - 600041\\
+    Email: \mbox{\small\tt shuveb@gmail.com}&Email: \mbox{\small\tt taufiqaalam@gmail.com}\\
+    Ph: (+91)-98-4038-0386&Ph: (+91)-95-0008-7617
+  \end{tabular}
+\end{category}
+\end{document}
